@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <!-- An area to enter your to-do -->
+    <!-- An area to display the todos-->
+    <!-- A button to clear a todo -->
+
+    <!-- Maintain all todos in a list and then keep modifying it as per the user actions. Display this list one item at a time-->
+
+    <!-- <div class="container" style="width: 500px; overflow:visible;text-align: center;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod ipsam asperiores nobis facilis totam neque
+        laudantium dolorum fugiat consequatur.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem beatae reprehenderit aliquid iste ratione
+        ducimus modi voluptas laboriosam aspernatur obcaecati!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, optio?
+        <br />
+        <br />
+
+
+        B
+    </div> -->
+
+    <div class="container">
+
+        <div class="addTodo">
+            <input type="text" name="task" id="taskText" placeholder="enter your new todo">
+            <button id="addTask">Add</button>
+        </div>
+
+        <div class="items" id="allTodos">
+        </div>
+
+        <div class="todo-details">
+            <span>You have <span id="noOfPendingTasks">0</span> pending tasks</span>
+            <button type="button" id="clearAll">Clear All</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
