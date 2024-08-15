@@ -17,20 +17,21 @@ body {
 
 .container {
   max-width: 100%;
+  width: fit-content;
   margin: 4em auto;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   gap: 1em;
   transition: letter-spacing 2s ease-in-out, width 2s ease-in-out;
-  /* border-left: 1px solid #f9dbba; */
-  /* border-right: 1px solid #f9dbba; */
+  border-left: 1px dashed #f9dbba;
+  border-right: 1px dashed #f9dbba;
+  padding: 1em;
 }
 
-/* p {
-  border-left: 1px solid #f9dbba;
-  border-right: 1px solid #f9dbba;
-} */
+p {
+  text-align: center;
+}
 
 .greeting {
   font-size: 4rem;
