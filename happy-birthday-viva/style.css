@@ -1,0 +1,50 @@
+html {
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  /* line-height: 1.5; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(208, 90%, 8%);
+  color: hsl(213, 95%, 22%);
+}
+
+.container {
+  width: 70%;
+  margin: 4em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: letter-spacing 2s ease-in-out, width 2s ease-in-out;
+  border-left: 1px solid #f9dbba;
+  border-right: 1px solid #f9dbba;
+}
+
+.greeting {
+  font-size: 4rem;
+}
+
+.name {
+  font-size: 3.5rem;
+  color: hsl(206, 59%, 64%);
+}
+
+.container:hover {
+  letter-spacing: 1em;
+  width: 75%;
+}
+
+.container:hover .greeting {
+  color: hsl(206, 59%, 64%);
+}
+
+.container:hover .name {
+  color: hsl(60, 43%, 80%);
+}
