@@ -16,16 +16,21 @@ body {
 }
 
 .container {
-  width: 70%;
+  max-width: 100%;
   margin: 4em auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1em;
   transition: letter-spacing 2s ease-in-out, width 2s ease-in-out;
+  /* border-left: 1px solid #f9dbba; */
+  /* border-right: 1px solid #f9dbba; */
+}
+
+/* p {
   border-left: 1px solid #f9dbba;
   border-right: 1px solid #f9dbba;
-}
+} */
 
 .greeting {
   font-size: 4rem;
@@ -39,7 +44,7 @@ body {
 .container:hover,
 .container.animate {
   letter-spacing: 1em;
-  width: 75%;
+  /* width: 75%; */
 }
 
 .container:hover .greeting,
