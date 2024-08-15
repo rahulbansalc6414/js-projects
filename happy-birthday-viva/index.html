@@ -21,6 +21,19 @@
         <p class="name">Viva</p>
     </div>
 
+    <script>
+        // Function to toggle the effect
+        function toggleEffect()
+        {
+            document.querySelector('.container').classList.toggle('animate');
+            document.querySelector('.greeting').classList.toggle('animate');
+            document.querySelector('.name').classList.toggle('animate');
+        }
+
+        // Set interval to toggle effect every 2 seconds
+        setInterval(toggleEffect, 3000);
+    </script>
+
 </body>
 
 </html>

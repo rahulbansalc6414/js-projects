@@ -37,17 +37,17 @@ body {
 }
 
 .container:hover,
-.container:active {
+.container.animate {
   letter-spacing: 1em;
   width: 75%;
 }
 
 .container:hover .greeting,
-.container:active .greeting {
+.greeting.animate {
   color: hsl(206, 59%, 64%);
 }
 
 .container:hover .name,
-.container:active .name {
+.name.animate {
   color: hsl(60, 43%, 80%);
 }
