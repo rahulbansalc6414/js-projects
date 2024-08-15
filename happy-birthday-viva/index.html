@@ -22,16 +22,25 @@
     </div>
 
     <script>
+
+        let counter = 0;
+        const maxCalls = 4;
         // Function to toggle the effect
         function toggleEffect()
         {
             document.querySelector('.container').classList.toggle('animate');
             document.querySelector('.greeting').classList.toggle('animate');
             document.querySelector('.name').classList.toggle('animate');
+            counter++;
+
+            if (counter >= maxCalls)
+            {
+                clearInterval(intervalId); // Stop the interval after reaching the limit
+            }
         }
 
         // Set interval to toggle effect every 2 seconds
-        // setInterval(toggleEffect, 3000);
+        const intervalId = setInterval(toggleEffect, 2500);
     </script>
 
 </body>
