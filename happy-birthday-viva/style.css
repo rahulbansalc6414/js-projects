@@ -16,17 +16,25 @@ body {
 }
 
 .container {
-  max-width: 100%;
   width: fit-content;
   margin: 4em auto;
-  text-align: center;
+  text-align: justify;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
-  transition: letter-spacing 2s ease-in-out, width 2s ease-in-out;
-  border-left: 1px dashed #f9dbba;
-  border-right: 1px dashed #f9dbba;
+  transition: letter-spacing 2s ease-in-out, width 2s ease-in-out,
+    text-indent 2s ease-in-out, padding-left 2s ease-in-out,
+    border-color 2s ease-in-out;
+  border-left: 2px dashed hsl(201, 67%, 89%);
+  border-right: 2px dashed hsl(201, 67%, 89%);
+  /* border: 1px dashed #f9dbba; */
   padding: 1em;
+}
+
+p {
+  /* border: 1px solid whitesmoke; */
 }
 
 .greeting {
@@ -41,6 +49,9 @@ body {
 .container:hover,
 .container.animate {
   letter-spacing: 1em;
+  text-indent: 1em;
+  border-color: #fffed3;
+  /* padding-left: 2em; */
 }
 
 .container:hover .greeting,
